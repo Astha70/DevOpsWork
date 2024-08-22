@@ -1,5 +1,9 @@
 FROM python:3.8-alpine
-WORKDIR /
-COPY . .
-RUN calculator.py
-CMD ["python", "-m", "unittest", "discover", "-p", "test_*.py"]
+
+WORKDIR /app
+
+COPY calculator.py test_calculator.py /app/
+
+ENTRYPOINT ["python"]
+
+CMD ["python", "calculator.py"]
