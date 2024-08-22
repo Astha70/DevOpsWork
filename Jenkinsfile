@@ -7,9 +7,9 @@ pipeline {
                 script {
                     // Ensure Docker is available on the agent
                     if (isUnix()) {
-                        sh "docker build . -t DevOpsWork"
+                        sh "docker build . -t devopswork"
                     } else {
-                        bat "docker build . -t DevOpsWork"
+                        bat "docker build . -t devopswork"
                     }
                 }
             }
