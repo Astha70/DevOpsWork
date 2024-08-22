@@ -18,7 +18,7 @@ pipeline {
     
     post {
         always {
-            // Clean up or archive any artifacts if needed
+            // Clean up
             echo 'Build completed'
         }
         success {
