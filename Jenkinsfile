@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    stages {
+    stages  
         stage('Build') {
             steps {
                 script {
-                    bat "docker.image('python:3.8-alpine')"
+                    docker.image('python:3.8-alpine')
                 }
             }
         }
