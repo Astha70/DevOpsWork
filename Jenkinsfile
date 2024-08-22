@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat "docker build -t DevOpsWork"
+                    sh "docker build -t DevOpsWork ."
                 }
             }
         }
