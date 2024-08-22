@@ -1,4 +1,4 @@
-#Simple Calculator for three functions
+#Simple Calculator 
 class Calculator:
     def add(self, a, b):
         return a + b
